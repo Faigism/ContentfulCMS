@@ -46,6 +46,9 @@ Get Space ID, Access Token and explore code examples.
 Space ID -
 Access Token -
 
+Space ID - dqpmhafetpug
+Access Token - V6v7UQ1Yd38trxq9H_FIk2rITsKa4i-fkBre1tRZXrI
+
 #### Install SDK
 
 - npm install contentful
@@ -53,18 +56,18 @@ Access Token -
 #### Get Entries
 
 ```js
-import { createClient } from 'contentful';
+import { createClient } from 'contentful'
 
 const client = createClient({
   space: 'qz00uzgg3leh',
   environment: 'master', // defaults to 'master' if not set
   accessToken: import.meta.env.VITE_API_KEY,
-});
+})
 
 client
   .getEntries({ content_type: 'projects' })
   .then((response) => console.log(response.items))
-  .catch(console.error);
+  .catch(console.error)
 ```
 
 #### Custom Hook
